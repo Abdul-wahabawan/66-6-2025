@@ -19,10 +19,18 @@
       padding: 20px;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .left-column, .right-column {
+      flex: 1;
+      min-width: 300px;
     }
     .header, .footer {
+      width: 100%;
       text-align: center;
       margin-bottom: 40px;
     }
@@ -36,13 +44,14 @@
     }
     .spotlight-title {
       color: #1d8eb6;
-      font-size: 24px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 700;
     }
     .spotlight-subtitle {
-      font-size: 36px;
+      font-size: 28px;
       color: #0D1B4C;
       font-weight: 700;
+      margin-top: 5px;
       line-height: 1.2;
     }
     .quote-icon {
@@ -51,48 +60,42 @@
       margin: 30px 0 10px;
     }
     .quote-text {
-      font-size: 20px;
+      font-size: 18px;
       font-style: italic;
       font-weight: 500;
       color: #1C398E;
-      margin: 0 10%;
-      text-align: left;
+      margin: 0 0 10px;
     }
     .quote-author {
-      margin-top: 20px;
-      text-align: right;
-      font-size: 18px;
+      margin-top: 10px;
+      font-size: 16px;
       font-weight: 600;
+      color: #1C398E;
     }
     .activities-title {
       text-align: right;
       color: #0092b8;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
     }
     .activities-date {
       text-align: right;
       color: #1C398E;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 600;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
-    table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0 15px;
-    }
-    td {
-      vertical-align: top;
+    .day-card {
+      display: flex;
+      background: linear-gradient(to right, #EAF5F9, #F0F9FF);
+      border-radius: 10px;
+      margin-bottom: 15px;
       padding: 15px;
     }
     .day-col {
-      width: 25%;
-      background: linear-gradient(to right, #EAF5F9, #F0F9FF);
-      font-weight: 700;
-      color: #0D1B4C;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
+      width: 90px;
+      text-align: center;
+      margin-right: 15px;
     }
     .day-number {
       font-size: 24px;
@@ -110,13 +113,12 @@
       text-transform: uppercase;
     }
     .events-col {
-      background: linear-gradient(to right, #EAF5F9, #F0F9FF);
+      flex: 1;
       border-left: 4px solid #1d8eb6;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      padding-left: 15px;
     }
     .event-item {
-      margin-bottom: 8px;
+      margin-bottom: 5px;
       font-size: 14px;
       color: #1C398E;
     }
@@ -133,32 +135,37 @@
       <img src="https://abdul-wahabawan.github.io/55-13-2025-Final/assets/newLogo.png" class="logo" alt="Our Echo Logo">
     </div>
 
-    <div class="spotlight-section">
-      <div class="spotlight-title">WHAT'S ON THIS WEEK?</div>
-      <div class="spotlight-subtitle">WEEKLY<br>SPOTLIGHT</div>
-      <div class="quote-icon">&ldquo;</div>
-      <div class="quote-text">
-        Embrace challenges as opportunities for growth, for diamonds are created under pressure. Let adversity shape you into a masterpiece.
+    <div class="left-column">
+      <div class="spotlight-section">
+        <div class="spotlight-title">WHAT'S ON THIS WEEK?</div>
+        <div class="spotlight-subtitle">WEEKLY SPOTLIGHT</div>
+        <div class="quote-icon">&ldquo;</div>
+        <div class="quote-text">
+          Embrace challenges as opportunities for growth, for diamonds are created under pressure. Let adversity shape you into a masterpiece.
+        </div>
+        <div class="quote-author">Penelope Wycliffe</div>
       </div>
-      <div class="quote-author">Penelope Wycliffe</div>
     </div>
 
-    <div class="activities-title">Activities Magazine</div>
-    <div class="activities-date">23rd June – 29th June</div>
+    <div class="right-column">
+      <div class="activities-title">Activities Magazine</div>
+      <div class="activities-date">23rd June – 29th June</div>
 
-    <table>
-      <tr>
-        <td class="day-col">
+      <div class="day-card">
+        <div class="day-col">
           <div class="day-number">23<sup class="day-suffix">RD</sup></div>
           <div class="day-name">Monday</div>
-        </td>
-        <td class="events-col">
+        </div>
+        <div class="events-col">
           <div class="event-item">🗓️ Antarctic Treaty</div>
           <div class="event-item">🗓️ 1848 - Saxophone</div>
           <div class="event-item">🗓️ 1940 - Adam Faith</div>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+
+      <!-- Repeat .day-card blocks for each day -->
+
+    </div>
 
     <div class="footer">
       Copyright &copy;2025 Our Echo Ltd
