@@ -5,69 +5,154 @@
   <title>Weekly Spotlight - Our Echo</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #1c398e;
       margin: 0;
       padding: 0;
+      background-color: #f9fcff;
     }
+
     table {
-      border-collapse: collapse;
       width: 100%;
+      border-collapse: collapse;
     }
+
     .logo {
-      width: 200px;
+      width: 250px;
     }
+
     .main-title {
-      font-size: 36px;
-      font-weight: bold;
+      font-size: 60px;
+      font-weight:700;
       color: #1c398e;
       line-height: 1.2;
+      margin-top: 10px;
     }
+
     .section-title {
-      font-size: 22px;
+      font-size: 27px;
       color: #1d8eb6;
-      font-weight: 600;
+      font-weight:400;
+      margin-bottom: 10px;
     }
+
     .quote {
-      font-style: italic;
-      font-size: 18px;
+      font-size: 25px;
+      color: #1c398e;
+      margin-top: 15px;
+      line-height: 1.5;
+      max-width: 200px;
       margin-top: 20px;
+      margin-left:60px;
     }
+
     .quote-author {
       font-weight: bold;
       margin-top: 10px;
+      color: #1c398e;
+      font-size: 27px;
+      margin-left: 290px;
+      margin-top:60px;
     }
+
     .activity-header {
       text-align: right;
     }
+
     .activity-title {
-      font-size: 22px;
-      color: #0092b8;
-      font-weight: bold;
-    }
-    .date-range {
-      font-size: 18px;
-      color: #1C398E;
+      font-size: 24px;
+      color: #1c398e;
       font-weight: 600;
+      margin-right:60px;
     }
+
+    .date-range {
+      font-size: 20px;
+      color: #1c398e;
+      margin-right:60px;
+      font-weight: 700;
+    }
+
     .calendar td {
       vertical-align: top;
-      padding: 10px;
-      border: 1px solid #ccc;
+      padding: 12px 10px;
+      background-color: #eaf5f9;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
+
     .calendar .date {
       font-weight: bold;
       font-size: 18px;
+      width: 120px;
+      color: #1c398e;
+      border-right:4px solid black ;
+      margin-top: 20px;
     }
+
     .calendar .events {
-      padding-left: 15px;
+      font-size: 16px;
+      color:black;
+      line-height: 1.6;
     }
+
     .footer {
       text-align: center;
       font-size: 14px;
       font-weight: bold;
-      margin-top: 40px;
       color: #374151;
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+    .highlight-box {
+      border-radius: 20px;
+      padding: 20px;
+      padding-left: 50px;
+    }
+
+    .activity-title {
+      color:#1D8EB6;
+    }
+
+    .lgo {
+      width: 150px;
+    }
+
+    .coma {
+      width: 200px;
+      margin-top:40px;
+    }
+
+    .calendar tr:nth-child(even) {
+      background-color: #dff0f6;
+    }
+
+    .calendar tr:hover td {
+      background-color: #c7e6f2;
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    .calendar td {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .calendar .events {
+      padding-left: 10px;
+    }
+
+    .calendar .events::before {
+      content: " ";
+    }
+
+    .calendar .date {
+      border-left: 6px solid #1d8eb6;
+      padding-left: 10px;
+    }
+
+    .tr-main td {
+        padding-top: 20px;
     }
   </style>
 </head>
@@ -79,84 +164,88 @@
       </td>
     </tr>
     <tr>
-      <!-- Left Side -->
+      <!-- Left Column -->
       <td width="50%" style="padding: 20px;">
-        <div class="section-title">WHAT'S ON THIS WEEK?</div>
-        <div class="main-title">WEEKLY<br />SPOTLIGHT</div>
-        <img src="https://www.seekpng.com/png/full/73-739376_quotation-marks-blue-quotation-marks-png.png" width="50" />
-        <div class="quote">
-          Embrace challenges as opportunities for growth, for diamonds are created under pressure. Let adversity shape you into a masterpiece.
+        <div class="highlight-box">
+          <div class="section-title">WHAT'S ON THIS WEEK?</div>
+          <div class="main-title">WEEKLY<br />SPOTLIGHT</div>
+          <img src="https://www.seekpng.com/png/full/73-739376_quotation-marks-blue-quotation-marks-png.png" class="coma" alt="Quote">
+          <div class="quote">
+            Embrace challenges as opportunities for growth, for diamonds are created under pressure. Let adversity shape you into a masterpiece.
+          </div>
+          <div class="quote-author">Penelope Wycliffe</div>
+          <br /><br />
+          <img class="lgo" src="https://abdul-wahabawan.github.io/55-13-2025-Final/assets/newLogo.png" alt="Bottom Logo" />
         </div>
-        <div class="quote-author">Penelope Wycliffe</div>
-        <br /><br />
-        <img class="logo" src="https://abdul-wahabawan.github.io/55-13-2025-Final/assets/newLogo.png" alt="Bottom Logo" />
       </td>
 
-      <!-- Right Side -->
-      <td width="50%" style="padding: 20px;">
-        <div class="activity-header">
-          <div class="activity-title">Activities Magazine</div>
-          <div class="date-range">23rd June – 29th June</div>
-        </div>
+      <!-- Right Column -->
+      <td width="50%">
+        <div class="highlight-box">
+          <div class="activity-header">
+            <div class="activity-title">Activities Magazine</div>
+            <div class="date-range">23rd June – 29th June</div>
+          </div>
 
-        <table class="calendar" width="100%">
-          <tr>
-            <td class="date">23RD<br />Monday</td>
-            <td class="events">
-              🗓️ Antarctic Treaty<br />
-              🗓️ 1848 - Saxophone<br />
-              🗓️ 1940 - Adam Faith
-            </td>
-          </tr>
-          <tr>
-            <td class="date">24TH<br />Tuesday</td>
-            <td class="events">
-              🗓️ Midsummer's Day<br />
-              🗓️ 1717 - First Lodge<br />
-              🗓️ 1964 - Louis Armstrong
-            </td>
-          </tr>
-          <tr>
-            <td class="date">25TH<br />Wednesday</td>
-            <td class="events">
-              🗓️ 1891 - Sherlock Published<br />
-              🗓️ 1956 - Marilyn Marries<br />
-              🗓️ 1972 - "Don't cry for me"
-            </td>
-          </tr>
-          <tr>
-            <td class="date">26TH<br />Thursday</td>
-            <td class="events">
-              🗓️ 1959 - The Queen visits Canada<br />
-              🗓️ 1951 - Lavender Hill Mob<br />
-              🗓️ 1870 - Valkyrie
-            </td>
-          </tr>
-          <tr>
-            <td class="date">27TH<br />Friday</td>
-            <td class="events">
-              🗓️ Sunglasses Day<br />
-              🗓️ 1957 - Smoking warning<br />
-              🗓️ 1963 - Brenda Lee
-            </td>
-          </tr>
-          <tr>
-            <td class="date">28TH<br />Saturday</td>
-            <td class="events">
-              🗓️ 1971 - First Scrabble Competition<br />
-              🗓️ 1935 - First Rupert Bear Annual<br />
-              🗓️ 1962 - Come Guided
-            </td>
-          </tr>
-          <tr>
-            <td class="date">29TH<br />Sunday</td>
-            <td class="events">
-              🗓️ 1966 - Barclaycard<br />
-              🗓️ 1910 - Frank Loesser<br />
-              🗓️ 1959 - Buddy Holly
-            </td>
-          </tr>
-        </table>
+          <table class="calendar" width="100%">
+            <tr class="tr-main">
+              <td class="date">23<sup>RD</sup><br>Monday</td>
+              <td class="events">
+                🗓️ Antarctic Treaty<br>
+                🗓️ 1848 - Saxophone<br>
+                🗓️ 1940 - Adam Faith
+              </td>
+            </tr>
+            <tr class="tr-main">
+              <td class="date">24<sup>TH</sup><br>Tuesday</td>
+              <td class="events">
+                🗓️ Midsummer's Day<br>
+                🗓️ 1717 - First Lodge<br>
+                🗓️ 1964 - Louis Armstrong
+              </td>
+            </tr>
+            <tr class="tr-main">
+              <td class="date">25<sup>TH</sup><br>Wednesday</td>
+              <td class="events">
+                🗓️ 1891 - Sherlock Published<br>
+                🗓️ 1956 - Marilyn Marries<br>
+                🗓️ 1972 - "Don't cry for me"
+              </td>
+            </tr>
+            <tr class="tr-main">
+              <td class="date">26<sup>TH</sup><br>Thursday</td>
+              <td class="events">
+                🗓️ 1959 - The Queen visits Canada<br>
+                🗓️ 1951 - Lavender Hill Mob<br>
+                🗓️ 1870 - Valkyrie
+              </td>
+            </tr>
+            <tr class="tr-main">
+              <td class="date">27<sup>TH</sup><br>Friday</td>
+              <td class="events">
+                🗓️ Sunglasses Day<br>
+                🗓️ 1957 - Smoking warning<br>
+                🗓️ 1963 - Brenda Lee
+              </td>
+            </tr>
+            <tr class="tr-main">
+              <td class="date">28<sup>TH</sup><br>Saturday</td>
+              <td class="events">
+                🗓️ 1971 - First Scrabble Competition<br>
+                🗓️ 1935 - First Rupert Bear Annual<br>
+                🗓️ 1962 - Come Guided
+              </td>
+            </tr>
+            <tr class="tr-main">
+              <td class="date">29<sup>TH</sup><br>Sunday</td>
+              <td class="events">
+                🗓️ 1966 - Barclaycard<br>
+                🗓️ 1910 - Frank Loesser<br>
+                🗓️ 1959 - Buddy Holly
+              </td>
+            </tr>
+          </table>
+        </div>
       </td>
     </tr>
     <tr>
