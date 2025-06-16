@@ -1,80 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Motivational Calendar</title>
+  <meta charset="UTF-8" />
+  <title>Weekly Spotlight - Our Echo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #fff;
-      color: #333;
+      color: #1c398e;
+      margin: 0;
+      padding: 0;
     }
     table {
-      width: 100%;
       border-collapse: collapse;
-      margin-bottom: 20px;
+      width: 100%;
     }
-    td, th {
-      border: 1px solid #999;
-      padding: 10px;
-      text-align: center;
+    .logo {
+      width: 200px;
+    }
+    .main-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1c398e;
+      line-height: 1.2;
+    }
+    .section-title {
+      font-size: 22px;
+      color: #1d8eb6;
+      font-weight: 600;
     }
     .quote {
-      font-size: 1.5em;
       font-style: italic;
+      font-size: 18px;
+      margin-top: 20px;
     }
-    .author {
+    .quote-author {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .activity-header {
       text-align: right;
-      font-weight: bold;
-      padding-right: 20px;
     }
-    .calendar th {
-      background-color: #eee;
-    }
-    .highlight {
-      background-color: #cce5ff;
+    .activity-title {
+      font-size: 22px;
+      color: #0092b8;
       font-weight: bold;
+    }
+    .date-range {
+      font-size: 18px;
+      color: #1C398E;
+      font-weight: 600;
+    }
+    .calendar td {
+      vertical-align: top;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .calendar .date {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .calendar .events {
+      padding-left: 15px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 40px;
+      color: #374151;
     }
   </style>
 </head>
 <body>
-
-  <!-- Quote Table -->
   <table>
     <tr>
-      <td class="quote">"The best way to predict the future is to create it."</td>
+      <td colspan="2" align="center" style="padding: 20px;">
+        <img class="logo" src="https://abdul-wahabawan.github.io/55-13-2025-Final/assets/newLogo.png" alt="Our Echo Logo" />
+      </td>
+    </tr>
+    <tr>
+      <!-- Left Side -->
+      <td width="50%" style="padding: 20px;">
+        <div class="section-title">WHAT'S ON THIS WEEK?</div>
+        <div class="main-title">WEEKLY<br />SPOTLIGHT</div>
+        <img src="https://www.seekpng.com/png/full/73-739376_quotation-marks-blue-quotation-marks-png.png" width="50" />
+        <div class="quote">
+          Embrace challenges as opportunities for growth, for diamonds are created under pressure. Let adversity shape you into a masterpiece.
+        </div>
+        <div class="quote-author">Penelope Wycliffe</div>
+        <br /><br />
+        <img class="logo" src="https://abdul-wahabawan.github.io/55-13-2025-Final/assets/newLogo.png" alt="Bottom Logo" />
+      </td>
+
+      <!-- Right Side -->
+      <td width="50%" style="padding: 20px;">
+        <div class="activity-header">
+          <div class="activity-title">Activities Magazine</div>
+          <div class="date-range">23rd June – 29th June</div>
+        </div>
+
+        <table class="calendar" width="100%">
+          <tr>
+            <td class="date">23RD<br />Monday</td>
+            <td class="events">
+              🗓️ Antarctic Treaty<br />
+              🗓️ 1848 - Saxophone<br />
+              🗓️ 1940 - Adam Faith
+            </td>
+          </tr>
+          <tr>
+            <td class="date">24TH<br />Tuesday</td>
+            <td class="events">
+              🗓️ Midsummer's Day<br />
+              🗓️ 1717 - First Lodge<br />
+              🗓️ 1964 - Louis Armstrong
+            </td>
+          </tr>
+          <tr>
+            <td class="date">25TH<br />Wednesday</td>
+            <td class="events">
+              🗓️ 1891 - Sherlock Published<br />
+              🗓️ 1956 - Marilyn Marries<br />
+              🗓️ 1972 - "Don't cry for me"
+            </td>
+          </tr>
+          <tr>
+            <td class="date">26TH<br />Thursday</td>
+            <td class="events">
+              🗓️ 1959 - The Queen visits Canada<br />
+              🗓️ 1951 - Lavender Hill Mob<br />
+              🗓️ 1870 - Valkyrie
+            </td>
+          </tr>
+          <tr>
+            <td class="date">27TH<br />Friday</td>
+            <td class="events">
+              🗓️ Sunglasses Day<br />
+              🗓️ 1957 - Smoking warning<br />
+              🗓️ 1963 - Brenda Lee
+            </td>
+          </tr>
+          <tr>
+            <td class="date">28TH<br />Saturday</td>
+            <td class="events">
+              🗓️ 1971 - First Scrabble Competition<br />
+              🗓️ 1935 - First Rupert Bear Annual<br />
+              🗓️ 1962 - Come Guided
+            </td>
+          </tr>
+          <tr>
+            <td class="date">29TH<br />Sunday</td>
+            <td class="events">
+              🗓️ 1966 - Barclaycard<br />
+              🗓️ 1910 - Frank Loesser<br />
+              🗓️ 1959 - Buddy Holly
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="footer">
+        Copyright © 2025 Our Echo Ltd
+      </td>
     </tr>
   </table>
-
-  <!-- Author Table -->
-  <table>
-    <tr>
-      <td class="author">– Peter Drucker</td>
-    </tr>
-  </table>
-
-  <!-- Calendar Table -->
-  <table class="calendar">
-    <tr>
-      <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-    </tr>
-    <tr>
-      <td></td><td></td><td class="highlight">1</td><td>2</td><td>3</td><td>4</td><td>5</td>
-    </tr>
-    <tr>
-      <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
-    </tr>
-    <tr>
-      <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
-    </tr>
-    <tr>
-      <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
-    </tr>
-    <tr>
-      <td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td>
-    </tr>
-  </table>
-
 </body>
 </html>
